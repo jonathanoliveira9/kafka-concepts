@@ -1,0 +1,3 @@
+To produce a message to topic
+
+docker exec -it kafka kafka-console-producer --broker-list kafka:9092 --topic test-topic
