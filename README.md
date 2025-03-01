@@ -1,4 +1,4 @@
-# Kafka Case Studies
+# Kafka Concepts Studies
 
 Este repositório apresenta estudos de caso sobre o uso do Apache Kafka para processamento de dados em tempo real, integração de sistemas e arquiteturas distribuídas.
 
