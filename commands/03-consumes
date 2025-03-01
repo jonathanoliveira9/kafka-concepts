@@ -1,0 +1,5 @@
+To consumes a message from topic
+--topic test-topic: name topic
+--from-begging: options to see the messages from begginer
+
+docker exec -it kafka kafka-console-consumer --bootstrap-server kafka:9092 --topic test-topic --from-beginning
