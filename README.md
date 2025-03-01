@@ -6,18 +6,6 @@ Este repositório apresenta estudos de caso sobre o uso do Apache Kafka para pro
 
 Fornecer exemplos práticos e documentação para ajudar desenvolvedores e arquitetos a entenderem e implementarem soluções baseadas no Kafka.
 
-## Estudos de Caso
-
-Fila de Processamento de Pedidos - Como usar Kafka para gerenciar pedidos em um sistema de e-commerce.
-
-Event Sourcing - Implementação de um sistema baseado em eventos para auditoria de transações.
-
-Dead Letter Queue (DLQ) - Gerenciamento de mensagens que falharam no processamento.
-
-Streaming de Dados em Tempo Real - Integração com sistemas de análise de dados.
-
-Integração com Bancos de Dados - Uso do Kafka Connect para sincronização de dados entre bancos relacionais e NoSQL.
-
 ## Requisitos
 
 Apache Kafka instalado (ou uso de uma plataforma gerenciada como Confluent Cloud)
