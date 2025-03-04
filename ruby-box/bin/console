@@ -3,6 +3,7 @@
 require_relative '../consumer.rb'
 require_relative '../producer.rb'
 require_relative '../lib/user_pb.rb'
+require_relative '../lib/stress_broker.rb'
 
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.

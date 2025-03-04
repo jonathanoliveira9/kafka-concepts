@@ -50,5 +50,5 @@ Example::User.decode(user_encoded)
 Para fazer teste de estresse nos brokers execute:
 
 ```ruby
-StressBenchmarking.new(num_messages = 500_000, num_threads = 20).execute
+StressBroker.new(num_messages = 500_000, num_threads = 20).execute
 ```

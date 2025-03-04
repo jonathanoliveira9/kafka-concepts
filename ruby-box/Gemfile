@@ -2,3 +2,5 @@ source 'https://rubygems.org'
 
 gem 'ruby-kafka'
 gem 'google-protobuf'
+gem 'concurrent-ruby'
+gem 'snappy'
