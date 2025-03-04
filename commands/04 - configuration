@@ -1,0 +1,3 @@
+To set the time to persist the messages you can apply:
+
+docker exec -it kafka1 kafka-topics --alter --topic test-topic --bootstrap-server kafka1:9092 --config retention.ms=86400000

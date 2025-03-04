@@ -1,0 +1,19 @@
+To create a topic
+-- topic my-topic: name topic
+--bootstrap-server kafka:9092: kafka address
+--partition 1: number of partitions
+--replication-factor 1: replics number (needs to be less or equal to number of brokers) 
+
+docker exec -it kafka1 kafka-topics --create --topic test-topic --bootstrap-server kafka1:9092 --partitions 1 --replication-factor 1
+
+List topics
+
+docker exec -it kafka kafka-topics --list --bootstrap-server kafka:9092
+
+To increase the paralism to write the messages, you can alter the partitions.
+
+docker exec -it kafka1 kafka-topics --alter --topic stress-benchmarking --bootstrap-server kafka1:9092 --partitions 12
+
+To increase the replication to write the message you just can use on create topic.
+
+docker exec -it kafka1 kafka-topics --create --topic stress-benchmarking --bootstrap-server kafka1:9092  --partitions 12 --replication-factor 3
