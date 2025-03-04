@@ -27,7 +27,7 @@ Para consumir as mensagens é só executar.
 Consumer.new(topic: 'test').execute
 ```
 
-Para enviar uma mensagem como Protobuf faça o seguinte, para saber mais sobre accesse [Protobuf](https://protobuf.dev/news/2023-04-20/).
+Para enviar uma mensagem como Protobuf faça o seguinte, para saber mais sobre acesse [Protobuf](https://protobuf.dev/news/2023-04-20/).
 
 ```ruby
 user = Example::User.new(id: 1, name: 'Test')
@@ -39,7 +39,7 @@ user_encoded = Example::User.encode(user)
 Producer.new(topic: 'test', message: user_encoded).execute
 ```
 
-Para obter os dados vocẽ pode executar isto:
+Para decodificar os dados você pode executar isto:
 
 ```ruby
 Example::User.decode(user_encoded)
