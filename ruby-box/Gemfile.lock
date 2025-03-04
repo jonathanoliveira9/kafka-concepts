@@ -1,8 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bigdecimal (3.1.9)
     digest-crc (0.7.0)
       rake (>= 12.0.0, < 14.0.0)
+    google-protobuf (4.29.3)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.29.3-x86_64-linux)
+      bigdecimal
+      rake (>= 13)
     rake (13.2.1)
     ruby-kafka (1.5.0)
       digest-crc
@@ -12,6 +19,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  google-protobuf
   ruby-kafka
 
 BUNDLED WITH
