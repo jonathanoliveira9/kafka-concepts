@@ -1,7 +1,7 @@
 require 'kafka'
 
 class Producer
-  def initialize(topic, message)
+  def initialize(topic:, message:)
     @topic = topic
     @message = message
   end

@@ -1,7 +1,7 @@
 require 'kafka'
 
 class Consumer
-  def initialize(topic)
+  def initialize(topic:)
     @topic = topic
   end
 
