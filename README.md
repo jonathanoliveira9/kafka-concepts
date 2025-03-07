@@ -16,8 +16,10 @@ Docker e Docker Compose (opcional para testes locais)
 
 Clone este repositório:
 
+```ruby
 git clone https://github.com/jonathanoliveira9/kafka-concepts.git
 cd kafka-concepts
+```
 
 Siga as instruções de cada estudo de caso na pasta correspondente.
 
