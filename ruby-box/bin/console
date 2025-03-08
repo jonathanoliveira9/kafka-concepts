@@ -1,16 +1,21 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
-require_relative '../consumer.rb'
-require_relative '../producer.rb'
-require_relative '../lib/user_pb.rb'
-require_relative '../lib/stress_broker.rb'
-
-# You can add fixtures and/or initialization code here to make experimenting
-# with your gem easier. You can also use a different console, if you like.
-
-# (If you use this, don't forget to add pry to your Gemfile!)
-# require "pry"
-# Pry.start
 
 require "irb"
+
+def reload!
+  files = [
+    '../consumer.rb',
+    '../producer.rb',
+    '../lib/user_pb.rb',
+    '../lib/stress_benchmarking.rb'
+  ]
+
+  files.each do |file|
+    load File.expand_path(file, __dir__)
+  end
+
+  puts "Reload complete!"
+end
+
 IRB.start(__FILE__)
