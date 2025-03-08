@@ -8,7 +8,7 @@ def reload!
     '../consumer.rb',
     '../producer.rb',
     '../lib/user_pb.rb',
-    '../lib/stress_benchmarking.rb'
+    '../lib/stress_broker.rb'
   ]
 
   files.each do |file|
@@ -17,5 +17,7 @@ def reload!
 
   puts "Reload complete!"
 end
+
+reload!
 
 IRB.start(__FILE__)
