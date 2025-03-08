@@ -3,10 +3,13 @@
 
 require 'google/protobuf'
 
-descriptor_data = "\n\nuser.proto\x12\x07example\" \n\x04User\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t"
+unless defined?(USER_PROTOBUF_LOADEAD)
+  USER_PROTOBUF_LOADEAD = true
+  descriptor_data = "\n\nuser.proto\x12\x07example\" \n\x04User\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t"
 
-Google::Protobuf::DescriptorPool.generated_pool.add_serialized_file(descriptor_data)
+  Google::Protobuf::DescriptorPool.generated_pool.add_serialized_file(descriptor_data)
 
-module Example
-  User = Google::Protobuf::DescriptorPool.generated_pool.lookup("example.User").msgclass
+  module Example
+    User = Google::Protobuf::DescriptorPool.generated_pool.lookup("example.User").msgclass
+  end
 end
